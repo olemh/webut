@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>oppg4</title>
+ <!--Script for å få mathml til å fungere-->
+ <script src="http://fred-wang.github.io/mathjax.js/mpadded-min.js"></script>
+
+ <style>
+ <!-- css for animasjon-->
+div {
+<!-- Størelsen på div element -->
+    width: 100px;
+    height: 100px;
+	<!--Bakgrunns farge-->
+    background-color: green;
+	<!--Navn på animasjon og hvor lenge den skal vare på to ulike måter for å støtte flest mulig nettlesere-->
+    -webkit-animation-name: farge; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: farge;
+    animation-duration: 10s;
+}
+<!--Fra hvilken farge til hvilken farge animasjonen skal forandre-->
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes farge {
+    from {background-color: green;}
+    to {background-color: red;}
+}
+
+/* Standard syntax */
+@keyframes farge {
+    from {background-color: green;}
+    to {background-color: red;}
+
+}
+
+	}
+
+</style>
+ 
+ </head>
+<body>
+
+<section>
+<h1>Video</h1>
+<!--video tag med størelse på video ruta og at kontrollene skal være med-->
+<video width="500" height="500" controls>
+  <source src="cat.mp4" type="video/mp4">
+</video>
+</section>
+<section>
+<h1>CSS Animasjon</h1>
+<!--Div elementet som skal animeres-->
+<div>
+Hei
+</div>
+</section>
+<section>
+  <h1>MathML</h1>
+
+  <p>
+    Kvadratroten av to:
+	<!--Må alltid starte med en math tag-->
+    <math>
+	<!--Kvadratrot tegn-->
+      <msqrt>
+	  <!--tall som skal være i kvadratroten-->
+        <mn>2</mn>
+      </msqrt>
+    </math>
+  </p>
+</section>
+
+<section>
+<h1>SVG</h1>
+<!--Størelse på svg elementet-->
+<svg width="200" height="200">
+<!--Bestemmer verdier slik som farge, størelse og form-->
+  <circle cx="100" cy="100" r="90" stroke="red" stroke-width="4" fill="green" />
+</svg>	
+</section>
+
+</body>
+</html>
