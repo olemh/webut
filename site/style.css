@@ -1,0 +1,76 @@
+
+/*Egenskaper for menyen*/
+ul {
+    list-style-type: none;
+	 /*setter margin, padding og bredden menyen skal ha*/
+    margin: 0;
+    padding: 0;
+    width: 10%;
+	 /*Setter bakgrunnsfarge*/
+    background-color: grey;
+    height: 100%; /* Full høyde */
+    position: fixed; /* Menyen følger skjermen uavhengig av posisjon */
+    overflow: auto; /* Hvis menyen er for stor kan man scrolle i den */
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/*Forandrer farge når man holder musen over et meny felt */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+/*Midstiller teksten i menyen og lager en liten border*/
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+/* setter egenskaper på elementet med id banner*/
+#banner {
+	/* Setter bakgrunnsfarge, høyde, border, margin og padding*/
+	background-color: grey;
+	height: 100px;
+	border: 0;
+	margin: 0;
+    padding: 0;
+}
+/*flytter artikkelen utenfor menyen og setter maks bredde på den*/
+.r1 {
+	position: relative;
+	left: 11%;
+	width: 20%;
+	height: 20%;
+	border: 2px solid black;
+	display: inline-block;
+}	
+.r2 {
+	position: relative;
+	left: 11%;
+	width: 20%;
+	height: 20%;
+	border: 2px solid black;
+	display: inline-block;
+}
+.bilde {
+	height: 200px;
+	witdt:  200px;
+}
+/*Boks til høyre på nettstedet*/
+aside {
+	/*setter teksten til høyre, at man kan scrolle i boksen, og at boksen har samme posisjon på skjermen uavhengig av scrolling*/
+	text-align: left;
+    visibility: visible;
+    position: absolute;
+	/*Setter maks bredde, maks høyde og hvor langt fra høyre kant boksen skal være*/
+    max-width: 20%;
+    top: 20%;
+    right:5%;  
+	/*Setter bakgrunnsfarge og border størelse og farge*/
+	background-color: lightgray;
+	border: 2px solid black;
+}
