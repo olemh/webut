@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Landsbykatten's siste nytt</title>
+  <link>https://olemh.github.io/site/index.html</link>
+  <description>Siste nytt om Landsbykattens oppdrett</description>
+  <item>
+    <title>Black Diamond nytt kull</title>
+    <link>https://olemh.github.io/site/index.html</link>
+    <description>Landsbykattens Black Diamond fikk et kull den 15.09/16</description>
+  </item>
+  <item>
+    <title>Se våres katter!</title>
+    <link>https://olemh.github.io/site/vkatt.html</link>
+    <description>Bilder og en kort beskrivelse av våres katter</description>
+  </item>
+</channel>
+
+</rss>

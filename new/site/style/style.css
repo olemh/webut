@@ -1,0 +1,99 @@
+﻿main {
+    position: relative;
+    width:90%;
+    float:right;
+}
+
+/*Egenskaper for menyen*/
+ul {
+    list-style-type: none;
+	 /*setter margin, padding og bredden menyen skal ha*/
+    margin: 0;
+    padding: 0;
+    width: 10%;
+	 /*Setter bakgrunnsfarge*/
+    background-color: grey;
+    height: 100%; /* Full høyde */
+    position: fixed; /* Menyen følger skjermen uavhengig av posisjon */
+    overflow: auto; /* Hvis menyen er for stor kan man scrolle i den */
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/*Forandrer farge når man holder musen over et meny felt */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+/*Midstiller teksten i menyen og lager en liten border*/
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+/* setter egenskaper på elementet med id banner*/
+#banner {
+	/* Setter bakgrunnsfarge, høyde, border, margin og padding*/
+	background-color: grey;
+	height: 100px;
+	border: 0;
+	margin: 0;
+    padding: 0.5%;
+color:white;
+}
+/*flytter artikkelen utenfor menyen og setter maks bredde på den*/
+section {
+width:58%;
+margin:1%;
+float:left;
+}
+section article {
+    margin-bottom:1rem;
+	margin-left:1%;
+    margin-right:1%;
+	position:static;
+	width: 31%;
+	min-height: 40em;
+	outline: 2px solid black;
+	float:left;
+    background-color:lightgrey;
+}	
+section article * {
+    padding:0.5rem;
+}
+/*legg på mellomrom etter hver tredje artikkel */
+section article:nth-of-type(3n +1) {
+    clear:both;
+}
+
+.bilde {
+    padding:0;
+	max-width:100%;
+    max-height:20em;
+    /*sentrer bilder*/
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+/*Boks til høyre på nettstedet*/
+aside {
+	/*setter teksten til høyre, at man kan scrolle i boksen, og at boksen har samme posisjon på skjermen uavhengig av scrolling*/
+	display:block;
+    position: static;
+    float:right;
+	/*Setter maks bredde, maks høyde og hvor langt fra høyre kant boksen skal være*/
+    width: 38%;
+    margin:1%;
+}
+
+aside article {
+/*Setter bakgrunnsfarge og outline størelse og farge*/
+	background-color: lightgray;
+	outline: 2px solid black;
+    overflow:visible;
+    padding:1rem;
+}
